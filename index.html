@@ -28,7 +28,7 @@
         Transporte executivo para quem valoriza tempo, discricao e tranquilidade
         em deslocamentos urbanos, viagens, aeroportos, eventos e compromissos importantes.
       </p>
-      <a class="button" href="https://wa.me/5500000000000" target="_blank" rel="noopener">
+      <a class="button" href="#contato">
         Solicitar viagem pelo WhatsApp
       </a>
     </section>
@@ -117,16 +117,61 @@
       </div>
     </section>
 
-    <section class="cta" id="contato">
+    <section class="cta">
       <p class="tag">Agendamento pelo WhatsApp</p>
       <h2>Solicite agora sua viagem.</h2>
       <p>
         Informe seu destino, data e horario. Retornaremos com as informacoes
         para confirmar sua viagem executiva com seguranca.
       </p>
-      <a class="button secondary" href="https://wa.me/5500000000000" target="_blank" rel="noopener">
+      <a class="button secondary" href="#contato">
         Solicitar viagem pelo WhatsApp
       </a>
+    </section>
+
+    <section class="contact-section" id="contato">
+      <div class="contact-content">
+        <div>
+          <p class="tag">Agendamento pelo WhatsApp</p>
+          <h2>Solicite sua viagem executiva.</h2>
+          <p>
+            Preencha os dados abaixo para enviar sua solicitação diretamente pelo
+            WhatsApp. Informe o destino, horário e quantidade de pessoas para
+            receber um atendimento rápido, claro e profissional.
+          </p>
+        </div>
+
+        <form class="contact-form" id="travel-form">
+          <label for="nome">
+            Nome
+            <input type="text" id="nome" name="nome" autocomplete="name" required>
+          </label>
+
+          <label for="telefone">
+            Telefone
+            <input type="tel" id="telefone" name="telefone" autocomplete="tel" required>
+          </label>
+
+          <label for="destino">
+            Destino
+            <input type="text" id="destino" name="destino" required>
+          </label>
+
+          <label for="horario">
+            Horário
+            <input type="text" id="horario" name="horario" placeholder="Ex: 14:30" required>
+          </label>
+
+          <label for="pessoas">
+            Quantidade de pessoas
+            <input type="number" id="pessoas" name="pessoas" min="1" required>
+          </label>
+
+          <button class="button form-button" type="submit">
+            Solicitar viagem pelo WhatsApp
+          </button>
+        </form>
+      </div>
     </section>
   </main>
 
