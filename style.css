@@ -54,9 +54,9 @@ a {
 
 .brand img {
   display: block;
-  width: 128px;
+  width: 220px;
   max-width: 36vw;
-  height: 54px;
+  height: 86px;
   object-fit: contain;
 }
 
@@ -341,8 +341,8 @@ footer p {
   }
 
   .brand img {
-    width: 112px;
-    height: 48px;
+    width: 180px;
+    height: 72px;
   }
 
   .nav-links {
