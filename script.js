@@ -6,7 +6,7 @@ const travelForm = document.querySelector("#travel-form");
 const campaignFields = document.querySelector("#campaign-fields");
 const horarioInput = document.querySelector("#horario");
 const floatingCta = document.querySelector(".floating-cta");
-const floatingCtaTrigger = document.querySelector("#servicos");
+const floatingCtaTrigger = document.querySelector(".contact-content");
 const campaignStorageKey = "adelmo_motorista_campaign_params";
 const clickIdParams = ["gclid", "gbraid", "wbraid", "fbclid"];
 
@@ -101,7 +101,9 @@ function formatTimeInput(value) {
 }
 
 function updateFloatingCta() {
-  const shouldShow = window.scrollY >= floatingCtaTrigger.offsetTop - 16;
+  const triggerBottom =
+    floatingCtaTrigger.getBoundingClientRect().bottom + window.scrollY;
+  const shouldShow = window.scrollY >= triggerBottom - 16;
   floatingCta.classList.toggle("is-visible", shouldShow);
 }
 
