@@ -135,6 +135,21 @@ window.addEventListener("scroll", updateFloatingCta, { passive: true });
 window.addEventListener("resize", updateFloatingCta);
 updateFloatingCta();
 
+floatingCta.addEventListener("click", () => {
+  const latestCampaignParams = getCurrentCampaignParams();
+
+  window.dataLayer = window.dataLayer || [];
+  window.dataLayer.push({
+    event: "form_whatsapp",
+    form_name: "whatsapp_flutuante",
+    cta_type: "floating_whatsapp",
+    whatsapp_number: ownerWhatsAppNumber,
+    page_url: window.location.href,
+    ...latestCampaignParams,
+    campaign_params: latestCampaignParams,
+  });
+});
+
 getCurrentCampaignParams();
 
 travelForm.addEventListener("submit", (event) => {
